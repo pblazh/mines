@@ -1,0 +1,144 @@
+@-webkit-keyframes loading {
+  0% {
+    content: "   ";
+  }
+  25% {
+    content: ".  ";
+  }
+  50% {
+    content: ".. ";
+  }
+  75% {
+    content: "...";
+  }
+}
+@keyframes loading {
+  0% {
+    content: "   ";
+  }
+  25% {
+    content: ".  ";
+  }
+  50% {
+    content: ".. ";
+  }
+  75% {
+    content: "...";
+  }
+}
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slide {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+    color: transparent;
+    text-shadow: none;
+  }
+  49.999% {
+    transform: rotateY(90deg);
+    color: transparent;
+    text-shadow: none;
+  }
+  50% {
+    transform: rotateY(270deg);
+    color: white;
+    text-shadow: 0px 0px 8px black, 0px 0px 3px black, 0px 0px 2px black, 0px 0px 1px black;
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+    color: transparent;
+    text-shadow: none;
+  }
+  49.999% {
+    transform: rotateY(90deg);
+    color: transparent;
+    text-shadow: none;
+  }
+  50% {
+    transform: rotateY(270deg);
+    color: white;
+    text-shadow: 0px 0px 8px black, 0px 0px 3px black, 0px 0px 2px black, 0px 0px 1px black;
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes explode {
+  0% { transform: none; }
+  30% { transform: translateZ(30px); }
+  100% { transform: none; }
+}
+@keyframes explode {
+  0% { transform: none; }
+  30% { transform: translateZ(30px); }
+  100% { transform: none; }
+}
+@-webkit-keyframes won {
+  0% { transform: none; }
+  33% { transform: rotateY(-15deg); }
+  66% { transform: rotateY(15deg); }
+  100% { transform: none; }
+}
+@keyframes won {
+  0% { transform: none; }
+  33% { transform: rotateY(-15deg); }
+  66% { transform: rotateY(15deg); }
+  100% { transform: none; }
+}
+@-webkit-keyframes caboom {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes caboom {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}

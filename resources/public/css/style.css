@@ -1,0 +1,123 @@
+@import "animations.css";
+
+*>*,
+* {
+    box-sizing: border-box;
+}
+body{
+  background: grey;
+}
+#app{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    padding: 10px;
+    height: 450px;
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#333 23.5%,rgba(0,0,0,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#444 24%,rgba(0,0,0,0) 0)19px 30px,
+    linear-gradient(#333 14%,rgba(0,0,0,0) 0, rgba(0,0,0,0) 85%,#333 0)0 0,
+    linear-gradient(150deg,#333 24%,#444 0,#444 26%,rgba(0,0,0,0) 0,rgba(0,0,0,0) 74%,#444 0,#444 76%,#333 0)0 0,
+    linear-gradient(30deg,#333 24%,#444 0,#444 26%,rgba(0,0,0,0) 0,rgba(0,0,0,0) 74%,#444 0,#444 76%,#333 0)0 0,
+    linear-gradient(90deg,#444 2%,#333 0,#333 98%,#444 0%)0 0 #333;
+    background-size:40px 60px;
+    font-family: Monospace;
+    font-weight: bold;
+    color: white;
+    /*text-shadow: 1px 1px 10px black;*/
+    user-select: none;
+    overflow: hidden;
+}
+
+#app h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#app h2:after{
+  content: "   ";
+  -webkit-animation: loading 1s infinite;
+  animation: loading 1s infinite;
+}
+
+.intro h1{
+	color: white;
+  font-size: 99px;
+  text-align: center;
+  text-shadow: black 2px 2px 1px, rgba(0,0,0,0.5) 5px 10px 1px, rgba(0,0,0,0.2) 9px 20px 0px;
+}
+.intro button{
+  top: 60%;
+}
+
+h1{
+   left: 100%;
+  -webkit-animation: slide 0.5s;
+  animation: slide 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.box-flipped{
+  -webkit-animation: flip 0.5s;
+  animation: flip 0.5s;
+}
+.box-exploded div{
+  -webkit-animation: explode 0.5s;
+  animation: explode 0.5s;
+}
+.box-won div{
+  -webkit-animation: won 0.5s;
+  animation: won 0.5s;
+}
+.box-exploded .box-caboom{
+  transform: scale(1.5);
+  z-index: 1;
+  -webkit-animation: caboom 0.5s;
+  animation: caboom 0.5s;
+}
+button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: rgba(0,0,0,0.3);
+  border-radius: 100px;
+  box-shadow: black 10px 15px 40px;
+  color: darkred;
+  cursor: pointer;
+  font-size: 53px;
+  font-weight: bold;
+  padding: 20px 40px;
+  text-shadow: 3px 3px 0px #330000;
+  text-transform: uppercase;
+}
+
+button.restart{
+  -webkit-animation: drop 0.5s;
+  animation: drop 0.5s;
+  -webkit-animation-delay: 2.0s;
+  -webkit-animation-fill-mode: both;
+  animation-delay: 2.0s;
+  animation-fill-mode: both;
+}
+
+button:hover{
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: black 15px 25px 90px;
+  text-shadow: lightpink 0px 0px 5px;
+  color: red;
+}
+
+button:active {
+  transform: translate(-50%, -50%) scale(0.99);
+  box-shadow: black 5px 5px 10px;
+}
+button:focus {
+  outline:0;
+}
